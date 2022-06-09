@@ -62,4 +62,4 @@ toggleMusicButton.addEventListener("click", () => {
 // Footer
 const footerDateSpan = document.getElementById('date-in-footer');
 
-footerDateSpan.innerText = new Date().getFullYear();
+footerDateSpan.innerText = " " + new Date().getFullYear();
