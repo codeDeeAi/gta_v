@@ -10,12 +10,19 @@ const randomItemFromArray = (givenArray, prefix = "") => {
     return prefix + givenArray[Math.floor(Math.random() * givenArray.length)];
 };
 
-// Toggle Backgroung Image
+// Toggle Background Image
 const toggleBackgrounds = () => {
     const body = document.getElementById("app-body");
+    let previousImageUrl = body.style.backgroundImage;
     const imageUrl = randomItemFromArray(imagesArray, "./assets/images/");
     body.style.backgroundImage = `url(${imageUrl})`;
 };
+
+toggleBackgrounds(); // Run
+
+// Change Background image every x seconds
+setInterval(toggleBackgrounds, 10000);
+
 
 const backgroundMusic = new Audio("./assets/audio/1.mp3"); // Audio
 const toggleMusicButton = document.getElementById("toggle-sound-btn"); // Toggle button
@@ -51,7 +58,8 @@ toggleMusicButton.addEventListener("click", () => {
     return stopAudio();
 });
 
-toggleBackgrounds(); // Run
 
-// Change Background image every x seconds
-setInterval(toggleBackgrounds, 10000);
+// Footer
+const footerDateSpan = document.getElementById('date-in-footer');
+
+footerDateSpan.innerText = new Date().getFullYear();

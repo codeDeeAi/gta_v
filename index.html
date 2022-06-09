@@ -9,9 +9,13 @@
     <title>GTA 5</title>
 </head>
 
-<body id="app-body" class="w-screen h-screen overflow-auto bg-cover font-mono px-6 transition ease-in-out delay-150">
+<body id="app-body" class="w-screen h-screen overflow-auto bg-cover font-mono px-6 text-gray-100 transition ease-in-out delay-150">
     <!-- Navigation -->
     <nav class="flex justify-end py-2 gap-3">
+        <a href="https://www.linkedin.com/in/adeola-bada-aiism-a51174124" target="_blank" class="p-5 flex gap-2 border border-2 bg-contain bg-no-repeat bg-[url('./assets/icons/linkedin.svg')] rounded-md shadow-lg shadow-gray-500 text-bold uppercase hover:animate-pulse"
+            alt="linkedin-link"></a>
+        <a href="https://twitter.com/@AdeolaBada1" target="_blank" class="p-5 flex gap-2 border border-2 bg-contain bg-no-repeat bg-[url('./assets/icons/twitter.svg')] rounded-md shadow-lg shadow-gray-500 text-bold uppercase hover:animate-pulse" alt="twitter-link"></a>
+        <a href="https://github.com/codeDeeAi" target="_blank" class="p-5 flex gap-2 border border-2 bg-contain bg-no-repeat bg-[url('./assets/icons/github.svg')] rounded-md shadow-lg shadow-gray-500 text-bold uppercase hover:animate-pulse" alt="github-link"></a>
         <button type="button" id="toggle-sound-btn" class="px-4 py-2 flex gap-2 border border-2 rounded-md shadow-lg shadow-gray-500 text-bold uppercase hover:animate-pulse">
         <span id="toggle-sound-btn-text">Play Sound</span>
         <span
@@ -22,8 +26,8 @@
     </nav>
     <!-- Navigation Ends -->
     <!-- Card -->
-    <div class="flex" style="height: 90%">
-        <div class="md:w-2/6 text-gray-100 p-5 m-auto border border-2 shadow-lg backdrop-blur-md bg-gray/50 shadow-sky-500">
+    <div class="flex" style="height: 87%">
+        <div class="md:w-2/6 p-5 m-auto border border-2 shadow-lg backdrop-blur-md bg-gray/50 shadow-sky-500">
             <header class="h1 uppercase text-4xl font-bold text-gray-50 mb-5">
                 gta online
             </header>
@@ -49,9 +53,17 @@
     </div>
     <!-- Card Ends -->
     <!-- Footer -->
-    <footer>adsdasdasdas</footer>
+    <footer class="">
+        <p class="text-center">
+            Designed by
+            <a href="https://github.com/codeDeeAi" target="_blank" rel="noopener noreferrer">Adeola Bada</a
+        >
+      </p>
+      <p class="text-center">
+        @ <span class="mx-1" id="date-in-footer"></span>. All rights reserved.
+      </p>
+    </footer>
     <!-- Footer Ends -->
     <script type="text/javascript" src="./app.js"></script>
-</body>
-
+  </body>
 </html>
